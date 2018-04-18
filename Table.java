@@ -18,7 +18,14 @@ public class Table{
       return guests;
    }
    
+   public Party removeParty(){
+      //Party leaves the restaurant
+      Party temp = guests;
+      guests = null;
+      return temp;
+   }
+   
    public String toString(){
-      return "";
+      return "Name: "+name+"\nCapacity: "+capacity;
    }
 }

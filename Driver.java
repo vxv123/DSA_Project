@@ -42,6 +42,23 @@ class Driver{
             case "4"://Add a table.
             case "5"://Remove a table.
             case "6"://Display available tables.
+               System.out.println("Current available tables:");
+               if(EmptyNoPets.isEmpty() && EmptyPets.isEmpty()){
+                  System.out.println("There are no available tables left.");
+               }else{
+                  output = "";
+                  //Section information is maintained by which collection the Table is in, not as a data field, so we manually append
+                  temp_size = EmptyNoPets.size();
+                  for(int i = 0; i < temp_size; i++){
+                     output += EmptyNoPets.get(i).toString() + "\nSection: No Pets\n";
+                  }
+                  temp_size = EmptyPets.size();
+                  for(int i = 0; i < temp_size; i++){
+                     output += EmptyPets.get(i).toString() + "\nSection: Pets\n";
+                  }
+                  System.out.println(output);
+               }
+               break;
             case "7"://Display info about waiting customer parties.
                //We can use the toString method of the collection, as it directly aggregates the desired objects
                System.out.println("The following parties are waiting to be served:");
