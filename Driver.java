@@ -43,6 +43,10 @@ class Driver{
             case "3"://Customer party leaves the restaurant.
             case "4"://Add a table.
             case "5"://Remove a table.
+               //Cannot remove a table that currently has a Party seated there
+               //Report that the removal operation failed after only checking the two collections of available tables
+               //Both of these collections are kept sorted by capacity, not name, so we must sequentially search
+               break;
             case "6"://Display available tables.
                System.out.println("Current available tables:");
                if(EmptyNoPets.isEmpty() && EmptyPets.isEmpty()){
