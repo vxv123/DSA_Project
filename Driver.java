@@ -12,6 +12,10 @@ class Driver{
       "4.   Add a table.\n5.   Remove a table.\n6.   Display available tables.\n"+
       "7.   Display info about waiting customer parties.\n8.   Display info about customer parties being served.";
       String input = "";
+      /*
+      FullTables, EmptyNoPets, EmptyPets, PartiesInLine
+      */
+      
       System.out.println(menu);
       while(input.equals("0")){
          System.out.println("Please make your menu selection now: ");
