@@ -45,7 +45,11 @@ class Driver{
             case "7"://Display info about waiting customer parties.
                //We can use the toString method of the collection, as it directly aggregates the desired objects
                System.out.println("The following parties are waiting to be served:");
-               System.out.println(PartiesInLine.toString());
+               if(PartiesInLine.isEmpty()){
+                  System.out.println("No parties are currently waiting to be served.");
+               }else{
+                  System.out.println(PartiesInLine.toString());
+               }
                break;
             case "8"://Display info about customer parties being served.
                System.out.println("Parties currently served:");
