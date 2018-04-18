@@ -53,13 +53,14 @@
    
    public String toString(){
       if(numItems == 0){
-         return "LIST IS EMPTY";
+         return "COLLECTION IS EMPTY";
       }
-      output = "{";
+      output = "";
       for(int i = 0; i < this.numItems - 1; i++){
          //Relies on Object's toString or the subclass's overriden method of toString
-         output += items[i] + ", ";
+         output += items[i].toString() + "\n";
       }
-      return output += items[numItems-1] + "}";//Otherwise an extra comma and space would be appended
-   }
+      return output += items[numItems-1].toString();
+      
+      }
  }
