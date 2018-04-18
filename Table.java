@@ -1,0 +1,16 @@
+public class Table{
+//aggregates information related to its unique name, maximum capacity, section, and the Party
+   private final String name;
+   private final int capacity;
+   private Party guests;
+   
+   public Table(String unique_name, int n){
+      name = unique_name;
+      capacity = n; //Capacity can never change for a given table- tables can be removed or added instead
+      guests = null;
+   }
+   
+   public void seat(Party p){
+      guests = p;
+   }
+}
