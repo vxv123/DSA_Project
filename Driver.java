@@ -7,14 +7,24 @@ class Driver{
 
 
    public static void main(String[] args) throws IOException{
-      String menu = "0.  Close the restaurant.\n1.   Customer party enters the restaurant.\n"+
-      "2.   Customer party is seated and served.\n3.   Customer party leaves the restaurant.\n"+
-      "4.   Add a table.\n5.   Remove a table.\n6.   Display available tables.\n"+
-      "7.   Display info about waiting customer parties.\n8.   Display info about customer parties being served.";
+   
+      //TODO set up the restaurant before opening
       String input = "";
       /*
       FullTables, EmptyNoPets, EmptyPets, PartiesInLine
       */
+      ListArrayBasedPlus<Table> FullTables = new ListArrayBasedPlus<Table>();
+      ListArrayBasedPlus<Table> EmptyNoPets = new ListArrayBasedPlus<Table>();
+      ListArrayBasedPlus<Table> EmptyPets = new ListArrayBasedPlus<Table>();
+      ListArrayBasedPlus<Party> PartiesInLine = new ListArrayBasedPlus<Party>();
+
+      
+      
+      String menu = "0.  Close the restaurant.\n1.   Customer party enters the restaurant.\n"+
+      "2.   Customer party is seated and served.\n3.   Customer party leaves the restaurant.\n"+
+      "4.   Add a table.\n5.   Remove a table.\n6.   Display available tables.\n"+
+      "7.   Display info about waiting customer parties.\n8.   Display info about customer parties being served.";
+      
       
       System.out.println(menu);
       while(input.equals("0")){

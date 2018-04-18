@@ -46,7 +46,7 @@
       if(numItems == 0){
          return "COLLECTION IS EMPTY";
       }
-      String output = "";
+      output = "";
       for(int i = 0; i < this.numItems - 1; i++){
          //Relies on Object's toString or the subclass's overriden method of toString
          output += items[i].toString() + "\n";
