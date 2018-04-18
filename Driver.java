@@ -43,6 +43,10 @@ class Driver{
             case "5"://Remove a table.
             case "6"://Display available tables.
             case "7"://Display info about waiting customer parties.
+               //We can use the toString method of the collection, as it directly aggregates the desired objects
+               System.out.println("The following parties are waiting to be served:");
+               System.out.println(PartiesInLine.toString());
+               break;
             case "8"://Display info about customer parties being served.
                System.out.println("Parties currently served:");
                //traverse FullTables, get party, party.toString()

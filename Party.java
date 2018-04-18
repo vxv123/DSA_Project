@@ -9,5 +9,9 @@ public class Party{
       size = s;
       hasPet = p;
    }
+   
+   public String toString(){
+      return "Name: "+name+"\nSize: "+size+"\nHas pets: "+hasPet;
+   }
 
 }
