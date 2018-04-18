@@ -6,6 +6,8 @@ class Driver{
    static BufferedReader stdin = new BufferedReader (new InputStreamReader(System.in));
 
 
+//TODO add addTable helper method
+
    public static void main(String[] args) throws IOException{
    
       //TODO set up the restaurant before opening
