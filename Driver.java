@@ -29,7 +29,7 @@ class Driver{
       System.out.println(menu);
       int temp_size;//Prevents repeated method calls for every loop evaluation
       String output;//Collects relevant output and waits to perform file I/O once
-      while(input.equals("0")){
+      while(!input.equals("0")){
          System.out.println("Please make your menu selection now: ");
          input = stdin.readLine().trim();
          System.out.println(input);//echoed input
