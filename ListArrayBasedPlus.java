@@ -1,16 +1,7 @@
 /*
 
- * Purpose: Data Structure and Algorithms Lab 2 Problem 1
 
- * Status: Incomplete- needs generic class implementation
-
- * Last update: 02/26/18
-
- * Submitted:  01/29/18
-
- * Comment: test suite and sample run attached
-
- * @author: Lesley Holman
+ * @author: Wes Holman
  * @version: 2018.01.29
 
  */
