@@ -13,4 +13,12 @@ public class Table{
    public void seat(Party p){
       guests = p;
    }
+   
+   public Party getParty(){
+      return guests;
+   }
+   
+   public String toString(){
+      return "";
+   }
 }

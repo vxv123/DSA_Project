@@ -27,6 +27,8 @@ class Driver{
       
       
       System.out.println(menu);
+      int temp_size;//Prevents repeated method calls for every loop evaluation
+      String output;//Collects relevant output and waits to perform file I/O once
       while(input.equals("0")){
          System.out.println("Please make your menu selection now: ");
          input = stdin.readLine().trim();
@@ -42,6 +44,19 @@ class Driver{
             case "6"://Display available tables.
             case "7"://Display info about waiting customer parties.
             case "8"://Display info about customer parties being served.
+               System.out.println("Parties currently served:");
+               //traverse FullTables, get party, party.toString()
+               temp_size = FullTables.size();
+               if(temp_size > 0){
+                  output = "";
+                  for(int i = 0; i < temp_size; i++){
+                     output += FullTables.get(i).getParty().toString() + "\n";
+                  }
+               }else{
+                  output = "No parties are currently being served.";
+               }
+               System.out.println(output);
+               break;
             default:
                System.out.println("Invalid menu selection; please try again.");
                break;
